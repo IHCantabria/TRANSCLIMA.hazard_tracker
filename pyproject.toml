@@ -1,0 +1,61 @@
+[build-system]
+requires = [
+    "flit_core >=3.2,<4",
+]
+build-backend = "flit_core.buildapi"
+
+[project]
+version = "v0.2.1"
+name = "templatelib"
+authors = [
+    { name = "Felipe Maza", email = "felipe.maza@unican.es" },
+]
+maintainers = [
+    { name = "Felipe Maza", email = "felipe.maza@unican.es" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dynamic = [
+    "description",
+]
+dependencies = [
+    "tomli==2.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flit==3.12.0",
+    "black==25.12.0",
+    "Sphinx==8.2.3",
+    "myst-nb==1.3.0",
+    "sphinx-rtd-theme==3.0.2",
+    "pytest==9.0.2",
+]
+
+[project.urls]
+documentation = "https://ihcantabria.github.io/template.python.lib/"
+repository = "https://github.com/IHCantabria/template.python.lib"
+changelog = "https://github.com/IHCantabria/template.python.lib/blob/main/CHANGELOG.md"
+
+[project.scripts]
+template-tests = "templatelib.tests.__init__:run_tests"
+
+[tool.pytest.ini_options]
+addopts = "--durations=0 --durations-min=0.1"
+testpaths = "src/tests"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "serial",
+]
