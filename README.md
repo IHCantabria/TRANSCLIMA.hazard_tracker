@@ -1,17 +1,13 @@
 # Hazard tracker
 
-![Project Logo](docs/logo.png)
+![Project Logo](docs/TRANSCLIMA_logo.png)
 
-This repository provides a configurable pipeline for detecting,
-clustering, and analyzing storm surge events using numerical model
-outputs and observational datasets.
+This repository provides a hazard tracking algorithm that has been applied to detect and track storm surge events associated with tropical cyclones.
 
-The workflow identifies storm surge peaks, tracks spatio-temporal
-clusters using DBSCAN, and extracts surge hydrographs for further
-validation and feature analysis.
+The workflow identifies storm surge peaks, tracks spatio-temporal surge footprints using KM-DBSCAN, and extracts surge hydrographs. It also provides scripts for further validation and feature analysis.
 
 Funded by the European Union through the project Detection and Global Risk Assessment of Coastal Transitional Climate and Neo-Climate Regions in a Warming World
-01111262 — TransClima — HORIZON-MSCA-2022-PF-01 
+01111262 — TransClima — HORIZON-MSCA-2022-PF-01
 
 ------------------------------------------------------------------------
 
