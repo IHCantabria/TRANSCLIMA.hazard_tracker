@@ -1,26 +1,94 @@
-# template.python.lib
+# Storm Surge Hazard Tracker
 
-Use this template to easily implement operational models that can be installed using pip from other projects such as an api rest.
+This repository provides a configurable pipeline for detecting,
+clustering, and analyzing storm surge events using numerical model
+outputs and observational datasets.
 
+The workflow identifies storm surge peaks, tracks spatio-temporal
+clusters using DBSCAN, and extracts surge hydrographs for further
+validation and feature analysis.
 
-## Installation and use
+------------------------------------------------------------------------
 
-To install this module use:
+## Repository Structure
 
-```sh
-pip install https://github.com/IHCantabria/template.python.lib/archive/refs/tags/latest.zip
+    .
+    ├── main.py
+    ├── tracking_ss.py
+    ├── utils_ss.py
+    ├── main_feature_importance.py
+    ├── config*.json
+    ├── environment.yml
+    └── README.md
+
+------------------------------------------------------------------------
+
+## Requirements
+
+``` bash
+conda env create -f environment.yml
+conda activate transcatalog
 ```
 
-Run tests to validate:
+------------------------------------------------------------------------
 
-```sh
-template-tests
+## How to Run
+
+``` bash
+python main.py config3.json
 ```
 
-## Documentation
+Optional overrides:
 
-Documentation is available at https://ihcantabria.github.io/template.python.lib
+``` bash
+python main.py config3.json --basin=NA --storm_index=0
+```
 
-## Credits
+------------------------------------------------------------------------
 
-Developed and maintained by Felipe Maza @ IHCantabria.
+## Configuration File
+
+Example:
+
+``` json
+{
+  "basin": "NA",
+  "storm_index": 0,
+  "threshold_peak": 0.5,
+  "threshold_min": 0.1,
+  "DBSCAN_eps": 1.5,
+  "DBSCAN_min_samples": 5,
+  "delta": 6,
+  "variable_name": "ss",
+  "case_id": "config3",
+  "KM_ncentroids": 5
+}
+```
+
+------------------------------------------------------------------------
+
+## Outputs
+
+Results are stored in:
+
+storm_catalogue_ss\_`<case_id>`{=html}/`<basin>`{=html}/
+
+Including tracked clusters and surge hydrographs.
+
+------------------------------------------------------------------------
+
+## Feature Importance
+
+Run:
+
+``` bash
+python main_feature_importance.py
+```
+
+------------------------------------------------------------------------
+
+
+
+## Author and Contact
+@itxasoOderiz
+itxaso.oderiz@unican.es
