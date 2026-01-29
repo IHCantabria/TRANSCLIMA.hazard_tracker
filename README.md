@@ -1,6 +1,6 @@
-# Hazard tracker
+<img src="docs/TRANSCLIMA_logo.png" alt="Project Logo" width="250"/>
 
-<img src="docs/TRANSCLIMA_logo.png" alt="Project Logo" width="150"/>
+# Hazard tracker
 
 This repository provides a hazard tracking algorithm that has been applied to detect and track storm surge events associated with tropical cyclones.
 
