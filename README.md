@@ -79,6 +79,11 @@ Including tracked clusters and surge hydrographs.
 
 ------------------------------------------------------------------------
 
+## Demo
+
+![Storm Surge Tracker Demo for Allen (1980) hurricane](Hazard_tracker_Allen_1980.gif)
+------------------------------------------------------------------------
+
 ## Post-processing
 
 Run:
