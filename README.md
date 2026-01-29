@@ -1,4 +1,4 @@
-# Storm Surge Hazard Tracker
+# Hazard Tracker
 
 This repository provides a configurable pipeline for detecting,
 clustering, and analyzing storm surge events using numerical model
