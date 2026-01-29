@@ -1,6 +1,6 @@
 # Hazard tracker
 
-![Project Logo](docs/logo.png)   <!-- Path to your logo -->
+![Project Logo](docs/logo.png)
 
 This repository provides a configurable pipeline for detecting,
 clustering, and analyzing storm surge events using numerical model
@@ -10,7 +10,7 @@ The workflow identifies storm surge peaks, tracks spatio-temporal
 clusters using DBSCAN, and extracts surge hydrographs for further
 validation and feature analysis.
 
-funded by the European Union through the project Detection and Global Risk Assessment of Coastal Transitional Climate and Neo-Climate Regions in a Warming World
+Funded by the European Union through the project Detection and Global Risk Assessment of Coastal Transitional Climate and Neo-Climate Regions in a Warming World
 01111262 — TransClima — HORIZON-MSCA-2022-PF-01 
 
 ------------------------------------------------------------------------
@@ -86,7 +86,7 @@ Including tracked clusters and surge hydrographs.
 
 ## Demo
 
-![Storm Surge Tracker Demo for Allen (1980) hurricane](Hazard_tracker_Allen_1980.gif)
+![Storm Surge Tracker Demo for Allen (1980) hurricane](docs/Hazard_tracker_Allen_1980.gif)
 ------------------------------------------------------------------------
 
 ## Post-processing
