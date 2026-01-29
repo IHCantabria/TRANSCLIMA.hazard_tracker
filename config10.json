@@ -1,0 +1,13 @@
+{
+  "case_id": "CONF22",
+  "basin": "NA",
+  "storm_index": 5,
+  "threshold_peak": "p99",
+  "threshold_min": 0.1,
+  "DBSCAN_eps": 1,
+  "DBSCAN_min_samples": 1,
+  "KM_ncentroids":7,
+  "delta": 10,
+  "variable_name": "ss"
+}
+
