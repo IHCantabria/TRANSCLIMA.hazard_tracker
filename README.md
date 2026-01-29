@@ -1,4 +1,4 @@
-# Hazard Tracker
+# Hazard tracker
 
 This repository provides a configurable pipeline for detecting,
 clustering, and analyzing storm surge events using numerical model
@@ -12,14 +12,14 @@ validation and feature analysis.
 
 ## Repository Structure
 
-.
-├── hazard_tracker.py
-├── tracker_utils.py
-├── general_utils.py
-├── feature_importance.py
-├── config_*.json
-├── environment.yml
-└── README.md
+  .
+  ├── hazard_tracker.py
+  ├── tracker_utils.py
+  ├── general_utils.py
+  ├── feature_importance.py
+  ├── config_*.json
+  ├── environment.yml
+  └── README.md
 
 
 ------------------------------------------------------------------------
@@ -78,12 +78,14 @@ Including tracked clusters and surge hydrographs.
 
 ------------------------------------------------------------------------
 
-## Feature Importance
+## Post-processing
 
 Run:
 
 ``` bash
 python main_feature_importance.py
+python validation.py
+
 ```
 
 ------------------------------------------------------------------------
